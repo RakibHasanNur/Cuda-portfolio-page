@@ -284,8 +284,6 @@ hr {
 /*End portfolio*/
 
 
-
-
 /*start contact*/
 #contact {
 	background: #3c5499;
@@ -337,16 +335,16 @@ form div textarea{
 .message textarea{
 	height: 200px;
 }
+/*submit button*/
 .submit-btn{
-	width: 200px;
-	position: relative;
 	margin:0;
 	padding: 0;
 }
 .submit-btn input{
-	position: absolute;
-	left: 420px;
+	width: 150px;
+
 }
+/*submit button ends*/
 
 #about-us{
 	background: #ffffff;
