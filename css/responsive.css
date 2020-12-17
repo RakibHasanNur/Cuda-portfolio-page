@@ -1,40 +1,268 @@
-@media screen and (max-width: 1199px){
-	body{
-		width: 100%;
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) and (min-width: 992px){
+
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	*{
+		/*outline: 1px solid red;*/
+		/*overflow: auto;*/
 	}
-	.col-1-4 {
-		width: 50%;
-	}/*
-	.skill{
-		width: 30%;
+	.portfolio-images, .nav > .container, .service, .team, .skills{
+		flex-direction: column;
 	}
-	.skill-4{
-		width: 349px;
-		height: 328.84px;
+	.service-title {
+    padding-bottom: 50px;
+	}
+	.col-1-4{
+		margin: 0 !important;
+		padding-bottom: 50px; 
+	}
+	h3 {
+    margin-top: 22px;
+	}
+	.reviews {
+    flex-direction: column;
+	}
+	.review{
+		margin-bottom: 50px;
+		margin-left: 0; 	
+	}
+	.menu ul {
+    display: flex;
+    padding-inline-start: 0;
+}
+	footer{
+		/*overflow: hidden;*/
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px){ 
+/*	*{
+		outline: 1px solid red;
 	}*/
-	#skills{
-		display: none;
+		*{
+		/*outline: 1px solid red;*/
+		/*overflow: auto;*/
 	}
-	form{
-		width: 100%;
+	.portfolio-images, .nav > .container, .service, .team, .skills{
+		flex-direction: column;
 	}
- .portfolio-images{
-	display: flex;
-	flex-direction: column;
-	width: 50%
-	height: 50%;
-	padding-left: 60px;
+	.service-title {
+    padding-bottom: 50px;
+	}
+	.col-1-4{
+		margin: 0 !important;
+		padding-bottom: 50px; 
+	}
+	h3 {
+    margin-top: 22px;
+	}
+	.reviews {
+    flex-direction: column;
+	}
+	.review{
+		margin-bottom: 50px;
+		margin-left: 0; 	
+	}
+	.menu ul {
+    display: flex;
+    padding-inline-start: 0;
 }
- .portfolio-images img{
- 	padding-bottom: 30px;
- }
+	footer{
+		/*overflow: hidden;*/
+	}
+	
+/*adding starts from here*/
+	.title p {
+    font-size: 25px;
+    margin-top: 60px;
 }
-.reviews .review-1{
-	display: flex;
-	flex-direction: column;
+	h2 {
+    font-size: 30px;
 }
-@media screen and (max-width: 760px){
-	#portfolio{
-		display: none;
+.footer ul li {
+    padding-right: 7px;
+}
+}
+
+
+/*for mobiles*/
+@media screen and (max-width: 576px){
+/*		*{
+		outline: 1px solid red;
+	}*/
+		*{
+		/*outline: 1px solid red;*/
+		/*overflow: auto;*/
+	}
+	.portfolio-images, .nav > .container, .service, .team, .skills{
+		flex-direction: column;
+	}
+	.service-title {
+    padding-bottom: 50px;
+	}
+	.col-1-4{
+		margin: 0 !important;
+		padding-bottom: 50px; 
+	}
+	h3 {
+    margin-top: 22px;
+	}
+	.reviews {
+    flex-direction: column;
+	}
+	.review{
+		margin-bottom: 50px;
+		margin-left: 0; 	
+	}
+	.menu ul {
+    display: flex;
+    padding-inline-start: 0;
+}
+	footer{
+		/*overflow: hidden;*/
+	}
+	
+/*adding starts from here*/
+	.title p {
+    font-size: 25px;
+    margin-top: 60px;
+}
+	h2 {
+    font-size: 30px;
+}
+.footer ul li {
+    padding-right: 7px;
+}
+
+	/*adding starts from here*/
+	#service {
+	padding: 50px;
+}
+#team {
+    padding: 50px;
+}
+#skills {
+    padding: 50px 0 50px 0;
+}
+#portfolio {
+    padding: 50px 0 50px 0;
+}
+#about-us {
+    padding: 50px 10px 50px 10px; 
+}
+#contact {
+    padding: 50px 0 50px 0;
+}
+#footer {
+    padding: 10px;
+}
+.title p {
+    padding: 0 10px 0 10px;
+}
+.portfolio-images img {
+	height: 100%;
+    width: 100%;
+}
+.menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills {
+    padding-top: 0px;
+}
+.col-1-4 {
+    margin-bottom: 30px !important;
+    padding-bottom: 0;
+}
+#portfolio ul li{
+  	margin-bottom: 10px;
+}
+/*#portfolio ul li:last-child{
+  	margin: 0;
+}*/
+.p-i-1-1, .p-i-2-1 {
+    margin-right: 0;
+}
+.p-i-1-2, .p-i-2-2 {
+    margin-left: 0;
+}
+.contact form {
+    margin-top: 26px;
+}
+.name-email{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#contact {
+    padding: 50px;
+}
+.review {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-review {
+    text-align: center;
+     margin-left: 0px; 
+}
+.contact {
+    overflow: hidden;
+}
+.btn{
+	max-width: 50%;
+}
+/*.name,.email{
+	overflow: hidden;
+}*/
+}
+
+/*for hamburger menu to show*/
+@media screen and (max-width: 476px){
+	#header{
+		padding-top: 5%;
+	}
+	.nav > .container {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.menu{
+		height: 100vh;
+		width: 300px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: rgba(204,255,255,0.98);
+		transform: translateX(100%);
+    	transition: transform 0.5s ease-in;
+    	overflow: hidden; 
+	}
+	.menu-show{
+		transform: translate(0);
+	}
+	.menu ul li a{
+		color: black;
+		font-weight: bold;
+	}
+	.menu ul {
+		display: flex;
+	    flex-direction: column;
+	    list-style: none;
+	    justify-content: space-around;
+	    align-items: center;
+	    height: 100%;
+	}
+	.hamburger{
+	display: block;
 	}
 }
+
+
+
